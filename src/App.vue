@@ -1,26 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    
+    <router-view />
+    <CreatePolldle />
+    <CreatePolldle0ption />
+    <ResultPolldle />
+    <VotePolldle />
+    <Footer />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import CreatePolldle from "@/components/CreatePolldle.vue";
+  import CreatePolldle0ption from "@/components/CreatePolldle0ption.vue";
+  import ResultPolldle from "@/components/ResultPolldle.vue";
+  import VotePolldle from "@/components/VotePolldle.vue";
+  import Footer from '@/components/Footer.vue';
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: { CreatePolldle, CreatePolldle0ption, ResultPolldle, VotePolldle, Footer}
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
